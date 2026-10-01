@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>세모가로 이동합니다</title>
+  <link rel="canonical" href="https://semoga.kr/">
+  <script>
+    (function () {
+      var path = window.location.pathname;
+      var previewPrefix = "/semoga-mobile";
+      if (window.location.hostname === "jbread3142.github.io" &&
+          (path === previewPrefix || path.indexOf(previewPrefix + "/") === 0)) {
+        path = path.slice(previewPrefix.length) || "/";
+      }
+      window.location.replace(
+        "https://semoga.kr" + path + window.location.search + window.location.hash
+      );
+    }());
+  </script>
+  <meta http-equiv="refresh" content="0; url=https://semoga.kr/">
+</head>
+<body>
+  <p>세모가로 이동합니다. 자동으로 이동하지 않으면 <a href="https://semoga.kr/">여기를 눌러주세요.</a></p>
+</body>
+</html>
